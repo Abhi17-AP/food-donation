@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap');
 
 .aboutus {
     display: flex;
@@ -51,5 +51,78 @@
 @media (max-width: 520px) {
     .aboutus {
         flex-direction: column;
+    }
+} */
+
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap');
+
+/* General styles for about us section */
+.aboutus {
+    display: flex;
+    height: 60vh;
+    padding: 30px 60px;
+    margin: 40px 30px;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Text container within the about us section */
+.info-text {
+    width: 50%;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Heading styles */
+.info-heading {
+    padding-top: 15px;
+    color: black;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+/* Subheading styles */
+.info-subheading {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+/* Image container within the about us section */
+.info-img {
+    background-image: url("../../assets/work.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 45%;
+    height: 55vh;
+}
+
+/* Media query for medium-sized screens */
+@media (max-width: 998px) {
+    .aboutus {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        height: auto; /* Allow height to adjust based on content */
+        padding: 30px; /* Adjust padding for smaller screens */
+        margin: 20px; /* Adjust margin for smaller screens */
+    }
+    .info-text,
+    .info-img {
+        width: 100%; /* Expand both text and image to full width */
+        height: auto; /* Allow height to adjust based on content */
+        margin-bottom: 20px; /* Add spacing between text and image */
+    }
+}
+
+/* Media query for smaller screens like mobile phones */
+@media (max-width: 520px) {
+    .info-heading {
+        font-size: 2.5rem; /* Decrease heading font size for smaller screens */
+    }
+    .info-subheading {
+        font-size: 1.2rem; /* Decrease subheading font size for smaller screens */
     }
 }
