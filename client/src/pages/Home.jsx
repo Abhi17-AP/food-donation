@@ -15,7 +15,7 @@ const Home = () => {
       <HelpCard />
       <Vision />
       <Partner />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };
