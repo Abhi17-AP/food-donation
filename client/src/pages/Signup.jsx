@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 import axios from "axios";
-import "./Signup.css";
+import "./signup.css";
 
 const Signup = () => {
   const [formData, setFormData] = useState({
@@ -39,10 +39,12 @@ const Signup = () => {
   };
 
   return (
-    <div class="signup_container">
-      <div class="signup_main-img"></div>
+    <div className="signup_container">
 
-      <div class="signup_wrapper">
+      <div className="signup_main-img"></div>
+      
+
+      <div className="signup_wrapper">
         <form>
           <h1>Sign-Up</h1>
           <p>Create your free account on Food-donation</p>
@@ -84,10 +86,10 @@ const Signup = () => {
             Sign Up
           </button>
 
-          <div class="login">
+          <div className="login">
             <p>Already have an account?</p>
             <Link to={"/login"}>
-              <button class="login-btn">Login</button>
+              <button className="login-btn">Login</button>
             </Link>
           </div>
         </form>
