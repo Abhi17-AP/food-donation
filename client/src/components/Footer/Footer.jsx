@@ -8,6 +8,7 @@ const Footer = () => {
       <div className="heading-footer">
         ShareThe<span>MEAL</span>
       </div>
+      <div className="divSection">
       <div className="div1">
         <h4 className="footer-h4">Who We Are</h4>
         <p className="footer-p">About Us</p>
@@ -33,6 +34,7 @@ const Footer = () => {
             <FaFacebook size={40} />
           </p>
         </div>
+      </div>
       </div>
     </div>
   );

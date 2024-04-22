@@ -24,6 +24,8 @@ body {
   width: 50%;
   height: 100vh;
   /* background-color: #3C3C3C; */
+
+  
 }
 
 form {
@@ -42,6 +44,8 @@ form {
   /* height: 100vh; */
   /* border-radius: 25px; */
   flex: 1;
+
+  
 }
 
 .signup_wrapper h1 {
@@ -128,8 +132,6 @@ a {
   justify-content: center;
   align-items: first baseline;
   padding-top: 20px;
-
-
 }
 
 .login-btn {
@@ -155,4 +157,12 @@ a {
 button:hover,
 #login-btn:hover {
   transform: scale(1.1);
+}
+
+
+@media screen and (max-width:1197px) {
+  .signup_container{
+    flex-direction: column;
+  }
+
 }

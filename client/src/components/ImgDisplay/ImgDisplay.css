@@ -1,5 +1,5 @@
 .first-display {
-    margin: 20px;
+    margin: 20px 15px;
     background-image: url("../../assets/ImgDisplay.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -7,6 +7,16 @@
     height: 700px;
     justify-content: center;
     border-radius: 10px;
+    width: 100%;
+    margin-bottom: 100px;
+
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .img-text {
@@ -39,11 +49,93 @@ h3 {
     position: relative;
     top: 355px;
     text-align: center;
-    left: 43.5%;
+
 }
 
 .btn:hover {
     background-color: #f5f5f5;
     cursor: pointer;
     color: black;
+}
+
+@media screen and (max-width:998px) {
+    .first-display{
+        width: 95%;
+    }
+}
+@media screen and (max-width:718px) {
+    .first-display{
+        height: 600px;
+    }
+
+    .img-text{
+        font-size: 3rem;
+        margin: 10px;
+    }
+
+    h3{
+        margin: 10px;
+    }
+
+    .btn{
+        padding: 0.8rem 1.3rem;
+        font-size: 1rem;
+
+        margin: 10px;
+    }
+}
+
+
+@media screen and (max-width:537px) {
+    .first-display{
+        height: 500px;
+    }
+
+    .text{
+        height: 500px;
+    }
+
+    .img-text{
+        position: absolute;
+        top: 270px;
+        font-size: 2.5rem;
+        margin: 5px;
+    }
+
+    h3{
+        position: absolute;
+        top:390px;
+        margin: 15px;
+    }
+
+    .btn{
+        position: absolute;
+        top: 500px;
+        padding: 0.8rem 1.3rem;
+        font-size: 1rem;
+        margin: 15px;
+    }
+}
+
+@media screen and (max-width:350px) {
+
+    .first-display{
+        height: 400px;
+    }
+
+    .img-text{
+        font-size: 2rem;
+        top: 230px;
+    }
+    
+    h3{
+        font-size: 1.5rem;
+        top:310px;
+    }
+    .btn{
+        margin-top: 30px;
+        font-size: 0.7rem;
+        padding: 0.5rem 0.8rem;
+        top: 420px;
+    }    
 }
