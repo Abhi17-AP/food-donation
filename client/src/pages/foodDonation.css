@@ -100,3 +100,23 @@
     box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
     border-radius: 10px;
 }
+
+
+
+@media screen and (max-width: 1197px) {
+    
+        .food-donation_form {
+            width: 400px;
+            height: 530px;
+        }
+
+    }
+
+
+    @media screen and (max-width: 1021px) {
+        
+        .heading-food{
+            font-size: 150%;
+        }
+
+    }

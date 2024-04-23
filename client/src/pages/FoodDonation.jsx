@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import "./FoodDonation.css";
+import "./foodDonation.css";
 
 function FoodDonation() {
   const [foodName, setFoodName] = useState("");
@@ -39,7 +39,7 @@ function FoodDonation() {
   return (
     <div className="foodDonation_container">
       <div className="foodDonation_heading">
-        <h1 className="heading-foodd">FOOD DONATION FORM</h1>
+        <h1 className="heading-food">FOOD DONATION FORM</h1>
       </div>
       <div className="foodDonation_wrapper">
         <form className="food-donation_form" onSubmit={handleSubmit}>
